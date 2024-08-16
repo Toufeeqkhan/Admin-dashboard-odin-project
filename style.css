@@ -1,0 +1,261 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Quicksand', sans-serif;
+    overflow-x: clip;
+}
+
+
+.flex-area {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
+    width: 100%;
+    /* height: 100%; */
+}
+
+header {
+    background-color: #ffffff;
+    grid-column-start: 2;
+    display: grid;
+}
+
+.sidebar {
+    background-color: #1992d4;
+    grid-row-start: 1;
+    grid-row-end: -1;
+}
+
+main {
+    box-shadow: inset -4px 3px 5px  rgba(105, 105, 105, 0.384);
+    background-color: #e2e8f0;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-auto-rows: 1fr;
+    padding-right: 1rem;
+}
+
+
+.left-main {
+    grid-row-end: span 2;
+    padding: 2rem;
+}
+
+.announcements {
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 2px;
+    padding:1rem  1rem;
+    border-radius: 1rem;
+    font-size: 12px;
+    line-height: 1.2;
+    box-shadow:  -4px 3px 5px  rgba(105, 105, 105, 0.384);
+}
+
+.announcement {
+    padding: 1em 0em;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.trending {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 2rem 1rem;
+    background-color: white;
+    border-radius: 1rem;
+    font-size: 12px;
+    line-height: 1.3;
+    gap: 1rem;
+    box-shadow:  -4px 3px 5px  rgba(105, 105, 105, 0.384);
+}
+
+.trend {
+    height: 20%;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+
+
+/*.........................................*/
+
+.logo img {
+    height: 2rem;
+    margin: 10px;
+}
+
+.logo>h2 {
+    font-size: calc(1rem + 0.8vw);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 10px;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+}
+
+.links ul {
+    list-style: none;
+    font-weight: bold;
+    font-size: calc(0.75rem + 0.5vw);
+    padding-left: 20px;
+}
+
+.links ul li {
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    line-height: 2;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+.links ul li img {
+    width: 1.4rem;
+    display: inline;
+    margin-right: 1rem;
+}
+
+.links ul li:hover {
+    text-decoration: underline;
+}
+
+.sidebar-top {
+    margin-bottom: 2rem;
+}
+
+/* ................................ */
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    /* height: 80px; */
+    
+}
+
+img[alt='search'],
+img[alt='ring'] {
+    width: 1.4rem;
+    display: inline;
+}
+
+img[alt='ring'] {
+    margin-left: auto;
+}
+
+.user-img {
+    width: 2rem;
+    height: 2rem;
+    background-color: #facc15;
+    border-radius: 50%;
+}
+
+.nav input {
+    border: none;
+    border-radius: 2rem;
+    padding: 5px 10px;
+    background-color: #e2e8f0;
+    width: 60%;
+    box-shadow:  -4px 3px 5px  rgba(105, 105, 105, 0.384);
+}
+
+.nav input:focus {
+    outline: none;
+}
+
+/* .................................... */
+.under-nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem 2rem;
+    padding-bottom: 1.5rem;
+    box-shadow: 5px 5px 5px red;
+}
+
+.under-nav :last-child {
+    margin-left: auto;
+}
+
+.big {
+    width: 3rem;
+    height: 3rem;
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn {
+    padding: 5px 2rem;
+    font-weight: bold;
+    color: white;
+    background-color: #1992d4;
+    border: none;
+    border-radius: 2rem;
+    font-size: 12px;
+    cursor: pointer;
+    box-shadow:  -4px 3px 5px  rgba(105, 105, 105, 0.384);
+}
+
+.card-area {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+
+}
+
+.card {
+    background-color: white;
+    height: 200px;
+    border-radius: 1rem;
+    display: flex;
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 1.3;
+    box-shadow:  -4px 3px 5px  rgba(105, 105, 105, 0.384);
+}
+
+.card .content {
+    padding: 1rem;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+}
+
+.vertical-line {
+    background-color: #f0b429;
+    width: 20px;
+}
+
+.left-main h3 {
+    margin-bottom: 1rem;
+}
+
+.card-icons {
+    width: 1.3rem;
+    display: flex;
+    gap: 10px;
+    margin-left: 70%;
+}
+
+.top-right-main{
+    margin: 2rem 0rem;
+}
+.top-right-main h3,.bottom-right-main h3{
+    margin-bottom: 1rem ;
+}
+
+.bottom-right-main{
+    
+}
